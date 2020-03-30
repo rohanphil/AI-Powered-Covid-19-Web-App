@@ -20,11 +20,13 @@ The main.py file is the main executable file of the project. Run it as follows:
 IN A WINDOWS OS
 
 SET FLASK_APP=main.py
+
 flask run
 
 IN A LINUX ENVIORNMENT
 
 export FLASK_APP=main.py
+
 flask run
 
 Navigate to the given ip and port and upload the test images to get predictions.

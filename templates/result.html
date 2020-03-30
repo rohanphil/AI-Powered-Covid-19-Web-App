@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+   	 
+   	 <div class="col-md-4 col-lg-offset-4">
+        	{% if result == "Possibility of Covid-19 infection" %}
+   		 	<h4 style="color:red;">The patient may carry the virus</h1>
+   		 {% elif result == "Unlikely to be infected by Covid-19" %}
+   			 <h4 style="color:green;">It is unlikely that the patient is a carrier</h1>
+   		 {% endif %}
+   	 </div>
+   	 
+   	 <div class="col-md-4 col-lg-offset-4">
+   		 <img src="data:image/jpg;base64, {{encoded_photo | safe}}" width="50%">
+   	 </div>
+    
+{% endblock %}
